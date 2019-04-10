@@ -39,12 +39,13 @@ pthread number:: modify #define NUM_CG ?? , ?? should be 1,2,3,4
 ```
 
 ## run
-Download sparse positive definite matrices, which are of mtx format, to folder ../FloridaSparse/
-Some matrices may be too large to run on one node, because of limited main memory
-Generate metis permutation files using a x86 machine, to folder ../FloridaSparse/perm_x86/
-Modify parameters in test.py, 
-       1) mtx_path = ../FloridaSparse/
-       2) perm_x86_path = ../FloridaSparse/perm_x86/ 
+1. Download sparse positive definite matrices, which are of mtx format, to folder 'mtx_path'
+
+2. Some matrices may be too large to run on one node, because of limited main memory
+
+3. Generate metis permutation files using a x86 machine, to folder 'perm_path'
+
+4. Modify parameters in test.py. mtx_path = 'mtx_path' && perm_x86_path = 'perm_path' 
 
 ```bash
     python test.py
